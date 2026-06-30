@@ -1,0 +1,25 @@
+# Secrets & keys
+.vault_key
+.vault_key_demo
+*.key
+
+# Raw PII data (không nộp)
+medviet-governance/data/raw/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.eggs/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# spaCy blank model cache
+.spacy_models/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pytest_asyncio\plugin.py:299: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the "fixture" caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to "function" scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+============================= test session starts =============================
+platform win32 -- Python 3.10.9, pytest-8.2.0, pluggy-1.6.0 -- C:\Users\admin\AppData\Local\Programs\Python\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Day24-Track02-Lab-Assignment-main\medviet-governance
+plugins: anyio-4.14.0, deepeval-4.0.5, Faker-37.12.0, hydra-core-1.3.3, langsmith-0.8.9, asyncio-1.4.0, repeat-0.9.4, rerunfailures-16.3, xdist-3.8.0
+asyncio: mode=strict, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 6 items
+
+tests/test_pii.py::TestPIIDetection::test_cccd_detected PASSED           [ 16%]
+tests/test_pii.py::TestPIIDetection::test_phone_detected PASSED          [ 33%]
+tests/test_pii.py::TestPIIDetection::test_email_detected PASSED          [ 50%]
+tests/test_pii.py::TestPIIDetection::test_detection_rate_above_95_percent PASSED [ 66%]
+tests/test_pii.py::TestAnonymization::test_pii_not_in_output PASSED      [ 83%]
+tests/test_pii.py::TestAnonymization::test_non_pii_columns_unchanged PASSED [100%]Running teardown with pytest sessionfinish...
+
+
+============================= 6 passed in 16.98s ==============================
